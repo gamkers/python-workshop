@@ -38,7 +38,7 @@ if message:
         with st.chat_message("bot"):
             data = ai(message)
             st.write(data)
-            st.session_state.messages.append({"role": "bot", "message": "Good morning! Have a nice day"})
+            st.session_state.messages.append({"role": "bot", "message": data})
 
 
 
